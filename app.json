@@ -10,7 +10,11 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.ashutosh9752.mobileapp"
+      "bundleIdentifier": "com.ashutosh9752.mobileapp",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "This app uses Bluetooth to scan for nearby devices.",
+        "NSLocationWhenInUseUsageDescription": "Location access is needed for BLE scanning."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -26,7 +30,8 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "react-native-ble-plx"
     ],
     "experiments": {
       "typedRoutes": true

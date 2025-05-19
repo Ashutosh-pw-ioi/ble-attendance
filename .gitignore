@@ -41,3 +41,7 @@ app-example
 # IDE
 .idea
 .vscode
+
+# development build
+ios
+android
